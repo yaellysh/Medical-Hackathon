@@ -4,6 +4,7 @@ import joblib
 model = joblib.load("model.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 actdx_mapping = joblib.load("actdx_mapping.pkl")
+misdx_mapping = joblib.load("misdx_mapping.pkl")
 
 test_df = pd.read_csv("data/test_data.csv")
 
@@ -34,8 +35,14 @@ test_df = test_df.drop(columns=["BP (mmHg)", "Name", "Occupation"], errors="igno
 
 X_test_data = test_df[feature_columns]  
 
-predictions = model.predict(X_test_data)
-decoded_predictions = actdx_mapping[predictions]
+probabilities = model.predict_proba(X_test_data)
+for idx, probs in enumerate(probabilities):
+    misdx_probabilities = {misdx_mapping[i]: prob for i, prob in enumerate(probs)}
+    most_likely_misdiagnosis = max(misdx_probabilities, key=misdx_probabilities.get)
+    likelihood_misdiagnosed = sum(probs)  # Sum of misdiagnosis probabilities
 
-for idx, prediction in enumerate(decoded_predictions):
-    print(f"Prediction for {test_df['ID'].iloc[idx]}: {prediction}")
+    print(f"Patient {test_df['ID'].iloc[idx]}:")
+    print(f"  - Likelihood of being misdiagnosed: {likelihood_misdiagnosed:.2f}")
+    print(f"  - Most likely misdiagnosis: {most_likely_misdiagnosis} ({misdx_probabilities[most_likely_misdiagnosis]:.2f})")
+    print(f"  - Full misdiagnosis probability distribution: {misdx_probabilities}")
+    print("-" * 50)

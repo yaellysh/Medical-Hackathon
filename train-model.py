@@ -31,6 +31,7 @@ for binary_feature in binary_features:
 for ordinal_feature in ordianl_features:
     df[ordinal_feature] = df[ordinal_feature].map(ordinal_mapping)
 
+
 df['Misdiagnosis'], misdx_mapping = pd.factorize(df['Misdiagnosis'])
 df['Actual Diagnosis'], actdx_mapping = pd.factorize(df['Actual Diagnosis'])
 
@@ -54,6 +55,8 @@ print("Classification Report:\n", classification_report(y_test, predictions))
 joblib.dump(model, "model.pkl")
 joblib.dump(feature_columns, "feature_columns.pkl")
 joblib.dump(actdx_mapping, "actdx_mapping.pkl")
+joblib.dump(misdx_mapping, "misdx_mapping.pkl")
+
 
 
 
