@@ -2,8 +2,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
+import joblib
 
 df = pd.read_csv("data/train_data.csv")
+
+df = df.drop(columns=["Name", "Occupation"])
+df[['Systolic', 'Diastolic']] = df['BP (mmHg)'].str.split('/', expand=True).astype(int)
+df = df.drop(columns=["BP (mmHg)"])
+feature_columns = df.drop(columns=["Misdiagnosis", "Actual Diagnosis"]).columns.tolist()
 
 ordinal_mapping = {"Never": 0, "Rarely": 1, "Sometimes": 2, "Often": 3}
 binary_mapping = {"N": 0, "Y": 1}
@@ -25,10 +31,6 @@ for binary_feature in binary_features:
 for ordinal_feature in ordianl_features:
     df[ordinal_feature] = df[ordinal_feature].map(ordinal_mapping)
 
-df = df.drop(columns=["Name", "Occupation"])
-df[['Systolic', 'Diastolic']] = df['BP (mmHg)'].str.split('/', expand=True).astype(int)
-df = df.drop(columns=["BP (mmHg)"])
-
 df['Misdiagnosis'], misdx_mapping = pd.factorize(df['Misdiagnosis'])
 df['Actual Diagnosis'], actdx_mapping = pd.factorize(df['Actual Diagnosis'])
 
@@ -49,27 +51,10 @@ print(decoded_predictions)
 print("Accuracy:", accuracy_score(y_test, predictions))
 print("Classification Report:\n", classification_report(y_test, predictions))
 
-test_df = pd.read_csv("data/test_data.csv")
+joblib.dump(model, "model.pkl")
+joblib.dump(feature_columns, "feature_columns.pkl")
+joblib.dump(actdx_mapping, "actdx_mapping.pkl")
 
-for binary_feature in binary_features:
-    test_df[binary_feature] = test_df[binary_feature].map(binary_mapping)
 
-for ordinal_feature in ordianl_features:
-    test_df[ordinal_feature] = test_df[ordinal_feature].map(ordinal_mapping)
-
-test_df[['Systolic', 'Diastolic']] = test_df['BP (mmHg)'].str.split('/', expand=True).astype(int)
-
-test_df = test_df.drop(columns=["Name", "Occupation"])
-
-# Ensure the test data has the same columns as the training data
-X_test_data = test_df[X_train.columns]
-
-predictions = model.predict(X_test_data)
-
-decoded_predictions = actdx_mapping[predictions]
-
-test_names = test_df["ID"]
-for idx, prediction in enumerate(decoded_predictions):
-    print(f"Prediction for {test_names.iloc[idx]}: {prediction}")
 
 
