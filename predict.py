@@ -1,10 +1,10 @@
 import pandas as pd
 import joblib
 
-model = joblib.load("model.pkl")
-feature_columns = joblib.load("feature_columns.pkl")
-actdx_mapping = joblib.load("actdx_mapping.pkl")
-misdx_mapping = joblib.load("misdx_mapping.pkl")
+model = joblib.load("pkl/model.pkl")
+feature_columns = joblib.load("pkl/feature_columns.pkl")
+actdx_mapping = joblib.load("pkl/actdx_mapping.pkl")
+misdx_mapping = joblib.load("pkl/misdx_mapping.pkl")
 
 test_df = pd.read_csv("data/test_data.csv")
 

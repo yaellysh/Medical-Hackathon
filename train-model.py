@@ -1,5 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
@@ -52,10 +53,10 @@ print(decoded_predictions)
 print("Accuracy:", accuracy_score(y_test, predictions))
 print("Classification Report:\n", classification_report(y_test, predictions))
 
-joblib.dump(model, "model.pkl")
-joblib.dump(feature_columns, "feature_columns.pkl")
-joblib.dump(actdx_mapping, "actdx_mapping.pkl")
-joblib.dump(misdx_mapping, "misdx_mapping.pkl")
+joblib.dump(model, "pkl/model.pkl")
+joblib.dump(feature_columns, "pkl/feature_columns.pkl")
+joblib.dump(actdx_mapping, "pkl/actdx_mapping.pkl")
+joblib.dump(misdx_mapping, "pkl/misdx_mapping.pkl")
 
 
 
