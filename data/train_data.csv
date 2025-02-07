@@ -1,108 +1,101 @@
-ID,Name,Age,FH of Thyroid,FH of Cancer,FH of Diabetes,Occupation,Married,Children,Exercise (N/R/S/O),Weight Gain (Y/N),Weight Loss (Yes/No),ALT / AST (),TSH (mIU/L),T4 (ng/dL),Any antibodies present in blood (Y/N),Alcohol (N/R/S/O),History of smoking (Y/N),Anxiety (Y/N),Irritability,Palpitations,Increased appetite,Muscle weakness,Tremors,Increased sweating,Heat intolerance,Dry skin/nails,Eyes bulging,Dry eyes,Fatigue,Fast Heart Rate,Slow heart rate,Decreased appetite,Cold intolerance,HR (bpm),BMI,Nausea,BP (mmHg),Enlarged thyroid,Temp (C),WBC (x10⁹/L),Hemoglobin (g/dL),Platelets (x10⁹/L),Sodium (mmol/L),Potassium (mmol/L),Calcium (mg/dL),Glucose (mg/dL),Hoarseness ,Swallowing issues,Hair Thinning ,Autoimmune disease,Change in Bowel Movement,Irregular Periods,Joint Stiffness,Misdiagnosis,Actual Diagnosis
-1,Sarah,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,,
-2,Daniel R.,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,,
-3,Olivia T.,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,,
-4,Miguel A,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,,
-5,Aisha K.,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,,
-6,Daniel L,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,,
-7,Sofia M,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,,
+ID,Name,Age,FH of Thyroid,FH of Cancer,FH of Diabetes,Occupation,Married,Children,Exercise,Weight Gain,Weight Loss (Yes/No),ALT / AST (),TSH (mIU/L),T4 (ng/dL),Any antibodies present in blood,Alcohol,History of smoking,Anxiety,Irritability,Palpitations,Increased appetite,Muscle weakness,Tremors,Increased sweating,Heat intolerance,Dry skin/nails,Eyes bulging,Dry eyes,Fatigue,Fast Heart Rate,Slow heart rate,Decreased appetite,Cold intolerance,HR (bpm),BMI,Nausea,BP (mmHg),Enlarged thyroid,Temp (C),WBC (x10⁹/L),Hemoglobin (g/dL),Platelets (x10⁹/L),Sodium (mmol/L),Potassium (mmol/L),Calcium (mg/dL),Glucose (mg/dL),Hoarseness,Swallowing issues,Hair Thinning,Autoimmune disease,Change in Bowel Movement,Irregular Periods,Joint Stiffness,Misdiagnosis,Actual Diagnosis
 8,Patient_1,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Diabetes,Hypothyroidism
 9,Patient_2,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Hypothyroidism
 10,Patient_3,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Cancer,Hypothyroidism
-11,Patient_4,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Graves' Disease
-12,Patient_5,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Hashimoto's Thyroiditis
-13,Patient_6,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Hyperthyroidism
+11,Patient_4,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Graves' Disease
+12,Patient_5,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,3.2,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Hashimoto's Thyroiditis
+13,Patient_6,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Hyperthyroidism
 14,Patient_7,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Lyme Disease,Hypothyroidism
 15,Patient_8,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Graves' Disease
-16,Patient_9,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Cancer,Graves' Disease
-17,Patient_10,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
-18,Patient_11,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Subclinical Hypothyroidism
+16,Patient_9,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,3.0,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Cancer,Graves' Disease
+17,Patient_10,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,4.8,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
+18,Patient_11,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Subclinical Hypothyroidism
 19,Patient_12,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Lyme Disease,No Thyroid Disorder
-20,Patient_13,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
+20,Patient_13,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
 21,Patient_14,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hypothyroidism
-22,Patient_15,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
-23,Patient_16,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
-24,Patient_17,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Subclinical Hypothyroidism
+22,Patient_15,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
+23,Patient_16,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,3.0,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
+24,Patient_17,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Subclinical Hypothyroidism
 25,Patient_18,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Cancer,Hypothyroidism
 26,Patient_19,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Cancer,No Thyroid Disorder
-27,Patient_20,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
+27,Patient_20,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
 28,Patient_21,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Cancer,Hyperthyroidism
-29,Patient_22,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Hyperthyroidism
+29,Patient_22,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Hyperthyroidism
 30,Patient_23,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hypothyroidism
-31,Patient_24,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
-32,Patient_25,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
+31,Patient_24,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,10.1,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
+32,Patient_25,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,11.4,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
 33,Patient_26,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hypothyroidism
 34,Patient_27,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
-35,Patient_28,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
-36,Patient_29,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Thyroid Cancer
-37,Patient_30,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Hypothyroidism
-38,Patient_31,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Thyroid Cancer
+35,Patient_28,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,3.0,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
+36,Patient_29,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,8.9,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Thyroid Cancer
+37,Patient_30,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Hypothyroidism
+38,Patient_31,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.8,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Thyroid Cancer
 39,Patient_32,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Diabetes,Thyroid Cancer
 40,Patient_33,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Hyperthyroidism
 41,Patient_34,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Diabetes,Hypothyroidism
-42,Patient_35,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
-43,Patient_36,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
-44,Patient_37,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Hashimoto's Thyroiditis
-45,Patient_38,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
+42,Patient_35,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,12.2,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
+43,Patient_36,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
+44,Patient_37,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.9,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Hashimoto's Thyroiditis
+45,Patient_38,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,13.1,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
 46,Patient_39,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,Subclinical Hypothyroidism
 47,Patient_40,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Diabetes,Graves' Disease
 48,Patient_41,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Hashimoto's Thyroiditis
-49,Patient_42,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
+49,Patient_42,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,3.2,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
 50,Patient_43,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,Hyperthyroidism
 51,Patient_44,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Thyroid Cancer
 52,Patient_45,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hyperthyroidism
-53,Patient_46,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Hashimoto's Thyroiditis
+53,Patient_46,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,0.12,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Hashimoto's Thyroiditis
 54,Patient_47,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Subclinical Hypothyroidism
-55,Patient_48,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Hashimoto's Thyroiditis
-56,Patient_49,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Hashimoto's Thyroiditis
-57,Patient_50,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
+55,Patient_48,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Hashimoto's Thyroiditis
+56,Patient_49,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,5.4,0.6,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Hashimoto's Thyroiditis
+57,Patient_50,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,No Thyroid Disorder
 58,Patient_51,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Diabetes,Hypothyroidism
 59,Patient_52,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Cancer,Hashimoto's Thyroiditis
 60,Patient_53,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hypothyroidism
 61,Patient_54,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Lyme Disease,Subclinical Hypothyroidism
-62,Patient_55,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Graves' Disease
+62,Patient_55,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Cancer,Graves' Disease
 63,Patient_56,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,No Thyroid Disorder
 64,Patient_57,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Diabetes,No Thyroid Disorder
-65,Patient_58,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,No Thyroid Disorder
+65,Patient_58,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,2.1,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,No Thyroid Disorder
 66,Patient_59,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Thyroid Cancer
 67,Patient_60,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Lyme Disease,Hyperthyroidism
 68,Patient_61,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Diabetes,Thyroid Cancer
-69,Patient_62,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
+69,Patient_62,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
 70,Patient_63,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,No Thyroid Disorder
 71,Patient_64,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,Graves' Disease
 72,Patient_65,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Thyroid Nodules
 73,Patient_66,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,Hashimoto's Thyroiditis
-74,Patient_67,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Graves' Disease
+74,Patient_67,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,1.0,0.8,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Diabetes,Graves' Disease
 75,Patient_68,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Lyme Disease,Hashimoto's Thyroiditis
 76,Patient_69,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,Hyperthyroidism
 77,Patient_70,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Diabetes,Hypothyroidism
 78,Patient_71,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Graves' Disease
-79,Patient_72,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hypothyroidism
+79,Patient_72,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hypothyroidism
 80,Patient_73,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,Hyperthyroidism
 81,Patient_74,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Diabetes,Thyroid Nodules
-82,Patient_75,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
+82,Patient_75,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,5.8,0.9,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
 83,Patient_76,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Cancer,Graves' Disease
 84,Patient_77,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Cancer,Hyperthyroidism
-85,Patient_78,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
-86,Patient_79,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
-87,Patient_80,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
+85,Patient_78,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
+86,Patient_79,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Lyme Disease,Hyperthyroidism
+87,Patient_80,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,7.8,1.2,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Lyme Disease,Hypothyroidism
 88,Patient_81,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,Hypothyroidism
 89,Patient_82,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Diabetes,Hyperthyroidism
 90,Patient_83,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Cancer,Hyperthyroidism
 91,Patient_84,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Cancer,No Thyroid Disorder
-92,Patient_85,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Cancer,Hyperthyroidism
-93,Patient_86,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
-94,Patient_87,29,Y,N,N,Financial analyst,N,0,R,N,Y,N,<0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
+92,Patient_85,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,3.0,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Cancer,Hyperthyroidism
+93,Patient_86,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.7,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
+94,Patient_87,29,Y,N,N,Financial ananlyst,N,0,R,N,Y,N,0.01,2.5,Y,S,N,Y,N,N,Y,N,Y,Y,Y,N,Y,N,Y,Y,N,N,N,112,22,N,136/84,Y,37.8,6.5,14.5,275,139,3.3,9.2,101,N,N,N,N,Y,N,N,Diabetes,No Thyroid Disorder
 95,Patient_88,56,Y,Y,N,Librarian,Y,2,S,N,N,N,1.8,1.2,N,N,Y,N,N,N,N,Y,N,N,N,N,N,N,Y,N,N,N,N,82,25,N,128/76,Y,37.1,7.2,13.6,260,140,4.1,10.5,95,Y,Y,N,N,N,N,N,Lyme Disease,Hyperthyroidism
 96,Patient_89,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Cancer,Hypothyroidism
 97,Patient_90,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Graves' Disease
 98,Patient_91,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Thyroid Nodules
-99,Patient_92,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,N,N,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
+99,Patient_92,58,Y,Y,Y,Hardware Store ,Y,2,S,N,N,N,0.1,0.7,N,S,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,N,N,N,N,72,27,N,136/84,Y,36.5,7.1,14.2,260,140,4.0,10.5,96,Y,Y,N,N,N,N,N,Cancer,Thyroid Cancer
 100,Patient_93,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Subclinical Hypothyroidism
 101,Patient_94,25,Y,N,Y,Law Student,N,0,N,Y,N,N,5.9,0.7,Y,S,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,N,Y,58,26,N,110/70,Y,36.0,5.8,11.2,280,138,4.2,9.1,96,N,N,Y,N,Y,Y,N,Cancer,Hypothyroidism
-102,Patient_95,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Subclinical Hypothyroidism
+102,Patient_95,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.0,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Subclinical Hypothyroidism
 103,Patient_96,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,Graves' Disease
-104,Patient_97,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
+104,Patient_97,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.8,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Diabetes,Thyroid Nodules
 105,Patient_98,47,Y,N,Y,Warehouse Supervisor,Y,3,R,Y,Y,N,9.5,0.6,Y,S,N,Y,N,N,N,Y,Y,N,N,Y,N,N,Y,Y,N,N,Y,58,30,N,142/88,Y,36.1,5.8,11.9,230,137,4.2,9.1,126,N,N,N,Y,Y,N,Y,Diabetes,Graves' Disease
 106,Patient_99,43,Y,N,Y,High school teacher,N,2,R,Y,N,N,6.8,0.7,Y,S,N,Y,N,N,N,Y,N,N,N,Y,N,N,Y,N,Y,N,Y,58,27,N,118/78,Y,36.1,5.8,11.2,270,138,4.2,8.9,92,N,Y,N,N,Y,N,Y,Lyme Disease,Hypothyroidism
-107,Patient_100,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,L,H,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
+107,Patient_100,31,Y,N,N,Marketing exec,N,0,R,N,Y,N,6.5,2.7,Y,S,N,Y,Y,Y,N,N,Y,Y,Y,N,N,Y,Y,Y,N,N,N,112,21,Y,128/76,Y,37.8,6.4,13.1,245,139,3.9,10.8,110,N,N,N,N,Y,N,N,Lyme Disease,Graves' Disease
